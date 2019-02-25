@@ -1,10 +1,5 @@
 const Sequelize = require('sequelize');
-
-const sequelize = new Sequelize('test_db', 'postgres', 'pass', {
-    // c'mon postgres, pls work!
-    host: 'postgres',
-    port: '5432',
-    dialect: 'postgres'
-  });
-
+const connectionUrl = process.env.DATABASE_URL;
+const sequelize = new Sequelize(connectionUrl);
+console.log("Connection Url" + connectionUrl)
 module.exports = sequelize;

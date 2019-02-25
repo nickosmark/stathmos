@@ -14,6 +14,7 @@ services:
     # env_file: ./server/.env
     environment:
       - NODE_ENV=development
+      - DATABASE_URL=postgres://postgres:pass@postgres:5432/test_db
   client:
     build:
       context: ./client/
@@ -33,9 +34,7 @@ services:
       - "5432:5432"
     environment:
       POSTGRES_PASSWORD: pass
-      POSTGRES_USER: postgres
       POSTGRES_DB: test_db
     container_name: postgres
-    network_mode: bridge  
 volumes:
   db-data:
