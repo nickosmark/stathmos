@@ -20,9 +20,8 @@ class App extends Component {
     return (
       <div className="App">
         <Menu />
-        <Container><Item /></Container>
-        <Person name={this.state.persons.name} changeName={this.nameChangedHandler}></Person>
-        <Container><Comment /></Container>
+        <Container text><Item /></Container>
+        <Container text><Comment /></Container>
         
       </div>
     );

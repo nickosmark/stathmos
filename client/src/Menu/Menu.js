@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import logo from '../logo.svg';
 import { Menu } from 'semantic-ui-react'
 
 export default class MenuExampleStackable extends Component {
@@ -11,13 +12,18 @@ export default class MenuExampleStackable extends Component {
 
     return (
       <Menu stackable>
-        <Menu.Item>
-          <img src='https://react.semantic-ui.com/logo.png' />
+        <Menu.Item
+        name='home'
+        active={activeItem === 'home'}
+        onClick={this.handleItemClick}
+        >
+          <img src={logo} />
+          Pxyn News
         </Menu.Item>
 
         <Menu.Item position='right'
           name='Submit'
-          active={activeItem === 'features'}
+          active={activeItem === 'submit'}
           onClick={this.handleItemClick}
         >
           Submit
@@ -25,7 +31,7 @@ export default class MenuExampleStackable extends Component {
 
         <Menu.Item
           name='Sing-up'
-          active={activeItem === 'testimonials'}
+          active={activeItem === 'sign-up'}
           onClick={this.handleItemClick}
         >
           Sign Up
@@ -33,7 +39,7 @@ export default class MenuExampleStackable extends Component {
 
         <Menu.Item 
             name='Login' 
-            active={activeItem === 'sign-in'} 
+            active={activeItem === 'login'} 
             onClick={this.handleItemClick}
         >
           Login
