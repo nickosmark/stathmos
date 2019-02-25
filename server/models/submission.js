@@ -10,7 +10,7 @@ const Submission = sequelize.define('product', {
         primaryKey: true
     },
     title: Sequelize.STRING,
-    score:{
+    likes:{
         type: Sequelize.DOUBLE,
         allowNull: false
     }

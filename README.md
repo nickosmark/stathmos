@@ -1,5 +1,7 @@
 # Pnyx
 
+*STATUS :* This project is incomplete and still under development...
+
 Pnyx is a community driven news aggregator
 
   - Click love to upvote your favourite story
@@ -28,9 +30,10 @@ $ docker-compose logs -f -t
 ```
 ctrl^c to detach
 
-### Todos
+### Known issues
 
- - ...
+ - Axios: Module not found when running dev server inside docker-compose
+ - Create react dev server won't proxy the requests to server(backend) service
 
 
 License

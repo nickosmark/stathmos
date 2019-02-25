@@ -1,20 +1,17 @@
 import React, { Component } from 'react';
 import { Container, Header, List } from "semantic-ui-react";
+//import axios from "axios";
 import logo from './logo.svg';
 import './App.css';
-import Person from './Person/Person';
 import Comment from './Comment/Comment';
 import Item from './Item/Item';
 import Menu from './Menu/Menu';
 
 class App extends Component {
   state = {
-    persons : {name: "Max"}
+    submissions : []
   }
 
-  nameChangedHandler = (event) =>{
-    this.setState({persons: {name: event.target.value}});
-  };
 
   render() {
     return (
