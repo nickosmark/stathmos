@@ -1,0 +1,30 @@
+{
+  "name": "javascript-tut",
+  "version": "1.0.0",
+  "description": "testing node",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickosmark/js_learn_gist.git"
+  },
+  "author": "nickosmark",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nickosmark/js_learn_gist/issues"
+  },
+  "homepage": "https://github.com/nickosmark/js_learn_gist#readme",
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "pg": "^7.8.1",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^5.0.0-beta.11"
+  }
+}
