@@ -11,7 +11,9 @@ Pnyx is a community driven news aggregator
 ### Tech
 
 * Create-react-app
-* Node.js and express .js for api server
+* Node.js 10+ 
+* express .js
+* postgres 11
 
 ### Installation
 
