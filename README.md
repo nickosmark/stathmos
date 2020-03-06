@@ -1,6 +1,6 @@
 # Pnyx
 
-*STATUS :* This project is incomplete and still under development...
+*STATUS :* Abandoned :skull: ...
 
 Pnyx is a community driven news aggregator
 
